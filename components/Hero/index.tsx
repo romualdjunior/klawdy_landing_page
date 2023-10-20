@@ -17,10 +17,9 @@ const Hero = () => {
         <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
           <div className="flex flex-col justify-center items-center lg:gap-8 xl:gap-12">
           <motion.div
-                    initial={{opacity:0}}
-
+                    initial={{opacity:0,scale:1.25}}
    whileInView={{ opacity: [0,1],y:[50,100] }}
-            transition={{ duration:0.5,delayChildren: 0.5  }}
+            transition={{ duration:0.5,delayChildren: 0.5, }}
             className="text-center"
             
           >
@@ -28,9 +27,9 @@ const Hero = () => {
                 Cloud Cost Mastery Simplified
               </h1>
               <p className="">
-              If you're having trouble managing your cloud costs and services, you've come to the right spot.
+               You're having trouble managing your cloud costs and services? You've come to the right spot.
               </p >
-              <p className="">
+              <p className="mt-3">
                 Transform Your Cloud Journey: All-in-One Dashboard for Ultimate
                 Savings & Efficiency.
               </p>
@@ -54,22 +53,22 @@ const Hero = () => {
                   </div>
                 </form>
 
-                <p className="text-black dark:text-white mt-7">
+                {/* <p className="text-black dark:text-white mt-7">
                   Get the 14-day free trial now
-                </p>
+                </p> */}
               </div>
               </motion.div>
             {/* <div className="text-center">
            
             </div> */}
 
-<motion.div
-          initial={{opacity:0}}
+{ <motion.div
+          initial={{opacity:0,}}
          whileInView={{ opacity: [0,1],y:[0,100] }}
-        transition={{ duration: 1, delayChildren: 0.5 }}
+        transition={{ duration: 0.5,  }}
         className="md:w-1/3 hidden lg:block">
-        <div className="relative 2xl:-mr-7.5">
-                <Image
+        <div className="relative 2xl:-mr-7.5 ">
+                {/* <Image
                   src="/images/shape/shape-01.png"
                   alt="shape"
                   width={46}
@@ -89,11 +88,11 @@ const Hero = () => {
                   width={21.64}
                   height={21.66}
                   className="absolute -right-6.5 bottom-0 z-1"
-                />
+                /> */}
                 <div className=" relative aspect-[700/444] w-full">
                   <Image
                     className="dark:hidden shadow-solid-l"
-                    src="/images/hero/hero-light.svg"
+                    src="/images/hero/dashboard.gif"
                     alt="Hero"
                     fill
                   />
@@ -105,7 +104,7 @@ const Hero = () => {
                   />
                 </div>
               </div>
-        </motion.div>
+        </motion.div> }
           </div>
         </div>
       </section>
