@@ -41,17 +41,17 @@ const Hero = () => {
 
               <div className="mt-10">
                 <form onSubmit={handleSubmit}>
-                  <div className="flex justify-center gap-8">
-                    <input
+                  <div className="flex justify-center">
+                    {/* <input
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       type="text"
                       placeholder="Enter your email address"
                       className=" w-3/5 dark:bg-black border border-stroke dark:border-strokedark shadow-solid-2 dark:shadow-none rounded-full focus:outline-none focus:border-primary dark:focus:border-primary py-2.5 px-6"
-                    />
+                    /> */}
                     <button
                       aria-label="signup to newsletter"
-                      className="w-1/5 flex bg-black hover:bg-blackho dark:bg-btndark text-white rounded-full ease-in-out duration-300 pl-4.5 py-2.5"
+                      className="flex items-center justify-center bg-primary hover:bg-primaryho ease-in-out duration-300 text-white text-regular rounded-full py-2.5 px-7.5"
                     >
                       Get Started
                     </button>
