@@ -46,7 +46,7 @@ const Header = () => {
               className="w-full hidden dark:block"
             />
             <Image
-              src="/images/logo/logo-light.svg"
+              src="/images/logo/klawdy.png"
               alt="logo"
               width={119.03}
               height={30}
@@ -152,20 +152,18 @@ const Header = () => {
           </nav>
 
           <div className="flex items-center gap-6 mt-7 lg:mt-0">
-            <ThemeToggler />
-
             <Link
-              href="https://github.com/NextJSTemplates/solid-nextjs"
+              href="#"
               className="text-waterloo text-regular font-medium hover:text-primary"
             >
-            GitHub Repo 🌟
+              Sing up 🌟
             </Link>
 
             <Link
-              href="https://nextjstemplates.com/templates/solid"
+              href="#"
               className="flex items-center justify-center bg-primary hover:bg-primaryho ease-in-out duration-300 text-white text-regular rounded-full py-2.5 px-7.5"
             >
-              Get Pro 🔥
+              Sign In 🔥
             </Link>
           </div>
         </div>

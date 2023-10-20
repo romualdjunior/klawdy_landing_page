@@ -16,17 +16,13 @@ const Hero = () => {
       <section className="pt-35 md:pt-40 xl:pt-46 pb-20 xl:pb-25 overflow-hidden">
         <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
           <div className="flex lg:items-center lg:gap-8 xl:gap-32.5">
-            <div className=" md:w-1/2">
-              <h4 className="text-black dark:text-white text-lg font-medium mb-4.5">
-                🔥 Solid - A Complete SaaS Web Template
-              </h4>
+            <div className=" md:w-2/3">
               <h1 className="text-black dark:text-white text-3xl xl:text-hero font-bold mb-5 pr-16 ">
-              Free Next.js Template for 
-                <span className="inline-block relative before:absolute before:bottom-2.5 before:left-0 before:w-full before:h-3 before:bg-titlebg dark:before:bg-titlebgdark before:-z-1 ml-2.5 ">SaaS
-                </span>
+                Cloud Cost Mastery Simplified
               </h1>
               <p>
-Solid Pro - Packed with all the key integrations you need for swift SaaS startup launch, including - Auth, Database, Sanity Blog, Essential Components, Pages and More. Built-winth - Next.js 13, React 18 and TypeScript.
+                Transform Your Cloud Journey: All-in-One Dashboard for Ultimate
+                Savings & Efficiency
               </p>
 
               <div className="mt-10">
@@ -49,12 +45,12 @@ Solid Pro - Packed with all the key integrations you need for swift SaaS startup
                 </form>
 
                 <p className="text-black dark:text-white mt-5">
-                  Try for free no credit card required.
+                  Get the 14-day free trial now
                 </p>
               </div>
             </div>
 
-            <div className="animate_right md:w-1/2 hidden lg:block">
+            <div className="animate_right md:w-1/3 hidden lg:block">
               <div className="relative 2xl:-mr-7.5">
                 <Image
                   src="/images/shape/shape-01.png"

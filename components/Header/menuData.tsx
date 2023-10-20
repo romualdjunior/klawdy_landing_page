@@ -3,33 +3,48 @@ import { Menu } from "@/types/menu";
 const menuData: Menu[] = [
   {
     id: 1,
-    title: "Home",
+    title: "Platfom",
     newTab: false,
-    path: "/"
+    path: "/",
   },
   {
     id: 2,
-    title: "Features",
+    title: "Solutions",
     newTab: false,
-    path: "/#features"
-  },
-  {
-    id: 2.1,
-    title: "Blog",
-    newTab: false,
-    path: "/blog"
+    path: "/",
+    submenu: [
+      {
+        id: 31,
+        title: "AWS users",
+        newTab: false,
+        path: "/",
+      },
+      {
+        id: 34,
+        title: "Azure users",
+        newTab: false,
+        path: "/",
+      },
+      {
+        id: 35,
+        title: "GCP users",
+        newTab: false,
+        path: "/",
+      },
+    ],
   },
   {
     id: 2.3,
-    title: "Docs",
+    title: "Resources",
     newTab: false,
-    path: "/docs"
+    path: "/",
   },
   {
     id: 3,
-    title: "Pages",
+    title: "Customers",
     newTab: false,
-    submenu: [
+    path: "/",
+    /* submenu: [
       {
         id: 31,
         title: "Blog Grid",
@@ -66,14 +81,14 @@ const menuData: Menu[] = [
         newTab: false,
         path: "/error",
       },
-    ],
+    ],*/
   },
 
   {
     id: 4,
-    title: "Support",
+    title: "Pricing",
     newTab: false,
-    path: "/support"
+    path: "/",
   },
 ];
 
