@@ -17,22 +17,27 @@ const Hero = () => {
         <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
           <div className="flex flex-col justify-center items-center lg:gap-8 xl:gap-12">
           <motion.div
-                    initial={{opacity:0,scale:1.25}}
-   whileInView={{ opacity: [0,1],y:[50,100] }}
+                    initial={{opacity:0,scale:1.15}}
+   whileInView={{ opacity: [0,1],y:[0,20] }}
             transition={{ duration:0.5,delayChildren: 0.5, }}
             className="text-center"
             
           >
-               <h1 className="text-black dark:text-white text-3xl xl:text-hero font-bold mb-5 ">
-                Cloud Cost Mastery Simplified
-              </h1>
-              <p className="">
-               You're having trouble managing your cloud costs and services? You've come to the right spot.
-              </p >
-              <p className="mt-3">
+              <p className="text-sm mb-5 text-primary font-semibold">
                 Transform Your Cloud Journey: All-in-One Dashboard for Ultimate
                 Savings & Efficiency.
               </p>
+
+               <h1 className="text-black dark:text-white text-3xl xl:text-hero font-bold mb-5 ">
+                Cloud Cost Mastery Simplified
+              </h1>
+              <p className="text-md">
+               You're having trouble managing your cloud costs and services?
+              </p >
+              <p className="text-md mt-2">
+                You've come to the right spot.
+              </p >
+            
 
               <div className="mt-10">
                 <form onSubmit={handleSubmit}>
@@ -46,7 +51,7 @@ const Hero = () => {
                     />
                     <button
                       aria-label="signup to newsletter"
-                      className="w-1/5 flex bg-black hover:bg-blackho dark:bg-btndark text-white rounded-full ease-in-out duration-300 px-5.5 py-2.5"
+                      className="w-1/5 flex bg-black hover:bg-blackho dark:bg-btndark text-white rounded-full ease-in-out duration-300 pl-4.5 py-2.5"
                     >
                       Get Started
                     </button>
