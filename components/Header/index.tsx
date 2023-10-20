@@ -139,7 +139,7 @@ const Header = () => {
                       href={`${menuItem.path}`}
                       className={
                         pathUrl === menuItem.path
-                          ? "hover:text-primary text-primary"
+                          ? "hover:text-primary"
                           : "hover:text-primary"
                       }
                     >
@@ -156,14 +156,14 @@ const Header = () => {
               href="#"
               className="text-waterloo text-regular font-medium hover:text-primary"
             >
-              Sing up 🌟
+              Sign up 
             </Link>
 
             <Link
               href="#"
               className="flex items-center justify-center bg-primary hover:bg-primaryho ease-in-out duration-300 text-white text-regular rounded-full py-2.5 px-7.5"
             >
-              Sign In 🔥
+              Sign In
             </Link>
           </div>
         </div>

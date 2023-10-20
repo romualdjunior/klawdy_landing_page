@@ -15,43 +15,60 @@ const Hero = () => {
     <>
       <section className="pt-35 md:pt-40 xl:pt-46 pb-20 xl:pb-25 overflow-hidden">
         <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
-          <div className="flex lg:items-center lg:gap-8 xl:gap-32.5">
-            <div className=" md:w-2/3">
-              <h1 className="text-black dark:text-white text-3xl xl:text-hero font-bold mb-5 pr-16 ">
+          <div className="flex flex-col justify-center items-center lg:gap-8 xl:gap-12">
+          <motion.div
+                    initial={{opacity:0}}
+
+   whileInView={{ opacity: [0,1],y:[50,100] }}
+            transition={{ duration:0.5,delayChildren: 0.5  }}
+            className="text-center"
+            
+          >
+               <h1 className="text-black dark:text-white text-3xl xl:text-hero font-bold mb-5 ">
                 Cloud Cost Mastery Simplified
               </h1>
-              <p>
+              <p className="">
+              If you're having trouble managing your cloud costs and services, you've come to the right spot.
+              </p >
+              <p className="">
                 Transform Your Cloud Journey: All-in-One Dashboard for Ultimate
-                Savings & Efficiency
+                Savings & Efficiency.
               </p>
 
               <div className="mt-10">
                 <form onSubmit={handleSubmit}>
-                  <div className="flex flex-wrap gap-5">
+                  <div className="flex justify-center gap-8">
                     <input
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       type="text"
                       placeholder="Enter your email address"
-                      className="dark:bg-black border border-stroke dark:border-strokedark shadow-solid-2 dark:shadow-none rounded-full focus:outline-none focus:border-primary dark:focus:border-primary py-2.5 px-6"
+                      className=" w-3/5 dark:bg-black border border-stroke dark:border-strokedark shadow-solid-2 dark:shadow-none rounded-full focus:outline-none focus:border-primary dark:focus:border-primary py-2.5 px-6"
                     />
                     <button
                       aria-label="signup to newsletter"
-                      className="flex bg-black hover:bg-blackho dark:bg-btndark text-white rounded-full ease-in-out duration-300 px-7.5 py-2.5"
+                      className="w-1/5 flex bg-black hover:bg-blackho dark:bg-btndark text-white rounded-full ease-in-out duration-300 px-5.5 py-2.5"
                     >
                       Get Started
                     </button>
                   </div>
                 </form>
 
-                <p className="text-black dark:text-white mt-5">
+                <p className="text-black dark:text-white mt-7">
                   Get the 14-day free trial now
                 </p>
               </div>
-            </div>
+              </motion.div>
+            {/* <div className="text-center">
+           
+            </div> */}
 
-            <div className="animate_right md:w-1/3 hidden lg:block">
-              <div className="relative 2xl:-mr-7.5">
+<motion.div
+          initial={{opacity:0}}
+         whileInView={{ opacity: [0,1],y:[0,100] }}
+        transition={{ duration: 1, delayChildren: 0.5 }}
+        className="md:w-1/3 hidden lg:block">
+        <div className="relative 2xl:-mr-7.5">
                 <Image
                   src="/images/shape/shape-01.png"
                   alt="shape"
@@ -88,7 +105,7 @@ const Hero = () => {
                   />
                 </div>
               </div>
-            </div>
+        </motion.div>
           </div>
         </div>
       </section>
