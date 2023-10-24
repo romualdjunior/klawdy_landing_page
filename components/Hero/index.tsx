@@ -18,40 +18,40 @@ const Hero = () => {
           <div className="flex flex-col justify-center items-center lg:gap-8 xl:gap-12">
           <motion.div
                     initial={{opacity:0,scale:1.15}}
-   whileInView={{ opacity: [0,1],y:[0,20] }}
+   whileInView={{ opacity: [0,1],y:[0,-30] }}
             transition={{ duration:0.5,delayChildren: 0.5, }}
             className="text-center"
             
           >
-              <p className="text-sm mb-5 text-primary font-semibold">
-                Transform Your Cloud Journey: All-in-One Dashboard for Ultimate
-                Savings & Efficiency.
+              
+              <p className="text-sm my-3 text-primary px-7 md:px-20 font-semibold text-center">
+                #The number one lskdmsd
               </p>
 
                <h1 className="text-black dark:text-white text-3xl xl:text-hero font-bold mb-5 ">
                 Cloud Cost Mastery Simplified
               </h1>
-              <p className="text-md">
-               You're having trouble managing your cloud costs and services?
-              </p >
-              <p className="text-md mt-2">
-                You've come to the right spot.
-              </p >
+              <p className="text-md my-3 px-7 md:px-20 font-semibold text-center">
+                Transform Your Cloud Journey: All-in-One Dashboard for Ultimate
+                Savings & Efficiency.
+              </p>
+             
+             
             
 
-              <div className="mt-10">
+              <div className="mt-7">
                 <form onSubmit={handleSubmit}>
-                  <div className="flex justify-center gap-8">
+                  <div className="flex flex-wrap justify-center gap-8">
                     <input
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       type="text"
                       placeholder="Enter your email address"
-                      className=" w-3/5 dark:bg-black border border-stroke dark:border-strokedark shadow-solid-2 dark:shadow-none rounded-full focus:outline-none focus:border-primary dark:focus:border-primary py-2.5 px-6"
+                      className="	 md:w-3/5 dark:bg-black border border-stroke dark:border-strokedark shadow-solid-2 dark:shadow-none rounded-full focus:outline-none focus:border-primary dark:focus:border-primary py-2.5 px-6"
                     />
                     <button
                       aria-label="signup to newsletter"
-                      className="w-1/5 flex items-center justify-center bg-primary hover:bg-primaryho ease-in-out duration-300 text-white text-regular rounded-full py-2.5 px-3.5"
+                      className="	 md:w-1/5 flex items-center justify-center bg-primary hover:bg-primaryho ease-in-out duration-300 text-white text-regular rounded-full py-2.5 px-3.5"
                     >
                       Get Started
                     </button>
