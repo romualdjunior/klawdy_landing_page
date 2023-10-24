@@ -31,7 +31,7 @@ const Hero = () => {
                <h1 className="text-black dark:text-white text-3xl xl:text-hero font-bold mb-5 ">
                 Cloud Cost Mastery Simplified
               </h1>
-              <p className="text-md my-3 px-7 md:px-20 font-semibold text-center">
+              <p className="text-sm my-3 px-7 md:px-20 font-semibold text-center">
                 Transform Your Cloud Journey: All-in-One Dashboard for Ultimate
                 Savings & Efficiency.
               </p>
